@@ -3,14 +3,14 @@ public class Ora230222 {
     
     public static void main(String[] args) {
         
-        
-        
+        xSzamOssz();
+
     }
     
     private static void xSzamOssz() {
         int x = 10;
         int ossz = xSzamOssz(x);
-        kiiras("Elso %d szam összeg: %d\n".formatted(x, ossz));
+        kiiras("elso %d szam oszzeg: %d\n".formatted(x, ossz));
     }
     
     private static int xSzamOssz(int max) {
