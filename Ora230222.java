@@ -3,32 +3,23 @@ public class Ora230222 {
     
     public static void main(String[] args) {
         
-        xSzamOssz();
 
     }
     
-    private static void xSzamOssz() {
-        int x = 10;
-        int ossz = xSzamOssz(x);
-        kiiras("elso %d szam oszzeg: %d\n".formatted(x, ossz));
-    }
-    
-    private static int xSzamOssz(int max) {
-        int ossz = 0;
+    private static int elso10SzamOsszege(int max) {
+        int osszeg = 0;
         for (int i = 0; i < max; i++) {
-            ossz += i;
-            
+            osszeg += i;
         }
-        return ossz;
+        return osszeg;
     }
     
-    private static void szamolas(int a, int b) {
-        int ossz = a + b;
-        kiiras("%d + %d = %d\n".formatted(a, b, ossz));
+    private static int osszead(int a, int b) {
+        return a + b;
     }
     
-    private static void kiiras(String szov) {
-        System.out.println(szov);
+    private static void kiir(String szoveg) {
+        System.out.println(szoveg);
     }
 
     
