@@ -6,10 +6,14 @@ public class Ora230222 {
 
         int a = 3;
         int b = 5;
+        int[] negySzam = {10, 4, 16, 7};
+        int i = 0;
         int elso10Osszeg = elso10SzamOsszege();
         kiir(String.format("Elso tiz szam osszege: %d", elso10Osszeg));
-        int abOsszeg = osszead(a, b);
-        kiir(String.format("%d + %d = %d", a, b, abOsszeg));
+        int abOssz = osszead(a, b);
+        kiir(String.format("%d + %d = %d", a, b, abOssz));
+        int negyOssz = negySzam[0] + negySzam[1] + negySzam[2] + negySzam[3];
+        kiir(String.format("%d + %d + %d + %d = %d", negySzam[0], negySzam[1], negySzam[2], negySzam[3], negyOssz ));
         
     }
 
