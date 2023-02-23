@@ -7,24 +7,33 @@ public class Equalizer {
     
     public static void main(String[] args) {
         
-        hossz();
+        program();
         
     }
-
-    private static void hossz() {
-        for (int i = 0; i < 5; i++) {
-            eq();
-        }
+    
+    
+     private static void program() {
+        eq();
+        eq(12);
+        eq();
+        eq(8);
+        eq();
     }
 
+    private static void eq(int hossz) {
+        System.out.println(blokkGeneralas(hossz));
+    }
     private static void eq() {
+        System.out.println(blokkGeneralas(rnd.nextInt(3, 8)));
+    }
+
+    private static String blokkGeneralas(int hossz) {
         String szov = "";
-        int r = rnd.nextInt(5)+3;
-        for (int i = 0; i < r; i++) {
+        for (int i = 0; i < hossz; i++) {
             szov += "\u001B[45m" + " ";
             
         }
-        System.out.println(szov);
+        return szov;
     }
     
 }
